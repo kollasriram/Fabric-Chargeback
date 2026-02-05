@@ -35,7 +35,7 @@ Documentation: https://learn.microsoft.com/en-us/fabric/security/security-manage
 Install the Microsoft Fabric Capacity Metrics app.
 Documentation: https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-install
 
-Add the notebook user as **Contributor** to the metrics app workspace.
+Add the user, who is running the notebook, as **Contributor** to the metrics app workspace.
 Assign this workspace to an **F capacity**.
 
 ### 7. Lakehouse
