@@ -50,8 +50,8 @@ No schema creation is required—this notebook creates all needed tables.
     - Capacity Metrics – Utilities V1.ipynb – Extracts capacity and usage data into the Lakehouse.
     - Workspace Level Chargeback Query.ipynb – Generates workspace‑level chargeback insights. 
 2. Configure required variables inside Capacity Metrics – Utilities V1.ipynb:
-    - capacity_metrics_ws_name
-    - capacity_metrics_target_dataset_name
+    - capacity_metrics_ws_name (Name of the Capcity Metrics Workspace)
+    - capacity_metrics_target_dataset_name (Name of the dataset in Capcity Metrics Workspace)
 3. Ensure the correct Lakehouse is attached and set as the default Lakehouse where all extracted data should be written.
 4. Run the Capacity Metrics notebook to:
    - Pull capacity metrics
