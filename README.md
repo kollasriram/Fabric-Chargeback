@@ -47,7 +47,7 @@ No schema creation is required—this notebook creates all needed tables.
 ## Setup Instructions
 1. Configure notebook variables (capacity_metrics_ws_name & capacity_metrics_target_dataset_name).
 2. Ensure the Lakehouse is attached.
-3. Run the notebook to:
+3. Run the notebook (Workspace Level Chargeback Query.ipynb) to:
    - Retrieve capacity metrics
    - Retrieve Fabric cost data
    - Calculate per-workspace cost allocation
