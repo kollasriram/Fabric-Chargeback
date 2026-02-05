@@ -45,20 +45,21 @@ Documentation: https://learn.microsoft.com/en-us/fabric/onelake/create-lakehouse
 No schema creation is required—this notebook creates all needed tables.
 
 ## Setup Instructions
-Import the following notebook into the Fabric workspace.
 
-Capacity Metrics - Utilities V1.ipynb - For extracting the data into the lakehouse
-Workspace Level Chargeback Query.ipynb - To get the chargeback details
-
-1. Configure notebook variables in Capacity Metrics - Utilities V1.ipynb (capacity_metrics_ws_name & capacity_metrics_target_dataset_name).
-2. Ensure the Lakehouse where the data needs to be extarcted, as default lakehouse. is attached.
-3. Run the notebook (Workspace Level Chargeback Query.ipynb) to:
-   - Retrieve capacity metrics
-   - Retrieve Fabric cost data
-   - Calculate per-workspace cost allocation
-   - Write output tables to the Lakehouse
-4. Validate generated Delta tables inside the Lakehouse.
-5. Attcach and run the Workspace Level Chargeback Query.ipynb in the same lakehosue to get the chargeback details..
+1. Import the following notebooks into your Fabric workspace:
+    - Capacity Metrics – Utilities V1.ipynb – Extracts capacity and usage data into the Lakehouse.
+    - Workspace Level Chargeback Query.ipynb – Generates workspace‑level chargeback insights. 
+2. Configure required variables inside Capacity Metrics – Utilities V1.ipynb:
+    - capacity_metrics_ws_name
+    - capacity_metrics_target_dataset_name
+3. Ensure the correct Lakehouse is attached and set as the default Lakehouse where all extracted data should be written.
+4. Run the Capacity Metrics notebook to:
+   - Pull capacity metrics
+   - Retrieve Fabric cost information
+   - Compute cost allocation per workspace
+   - Write all resulting tables into the Lakehouse
+5. Validate that the generated Delta tables appear correctly in the Lakehouse.
+6. Attach and run Workspace Level Chargeback Query.ipynb against the same Lakehouse to produce the final chargeback details.
 
 ## Automation
 ### Option 1: Job Scheduler
